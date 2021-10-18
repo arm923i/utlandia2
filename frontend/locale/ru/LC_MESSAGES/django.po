@@ -1,0 +1,546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-30 12:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: frontend/templates/frontend/about.html:7
+msgid "Купить квартиру в новостройке ЖК Utlandia 2 в Ирпене"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:8
+msgid ""
+"Хотите купить квартиру в Ирпене с ремонтом в рассрочку? Каждая квартира в "
+"новостройке ЖК Utlandia 2 создана с любовью для вашего комфорта и уюта"
+msgstr ""
+
+#: frontend/templates/frontend/commercial.html:8
+msgid "Купить коммерческую недвижимость в ЖК Utlandia 2 | Ирпень"
+msgstr ""
+
+#: frontend/templates/frontend/commercial.html:9
+msgid ""
+"Хотите купить помещение под сдачу в аренду? Нежилые помещения от застройщика "
+"в ЖК Utlandia 2 - выгодная инвестиция в коммерческую недвижимость в Ирпене"
+msgstr ""
+
+#: frontend/templates/frontend/constructions.html:6
+msgid "ЖК Utlandia 2 | Ход строительства | Ирпень новостройки"
+msgstr ""
+
+#: frontend/templates/frontend/constructions.html:7
+msgid ""
+"Узнать о ходе строительства жилого комплекса Utlandia 2 в г. Ирпень. "
+"Квартиры от застройщика в новостройках Киевской области. Готовимся к сдаче "
+"объекта"
+msgstr ""
+
+#: frontend/templates/frontend/contacts.html:5
+msgid "ЖК Utlandia 2 контактная информация | Квартира в Ирпене"
+msgstr ""
+
+#: frontend/templates/frontend/contacts.html:6
+msgid ""
+"Успейте купить квартиру в новостройке ЖК Utlandia 2 в г. Ирпень. Оперативный "
+"показ квартир и помещений под бизнес. Офис-продаж в центре города"
+msgstr ""
+
+#: frontend/templates/frontend/docs.html:5
+msgid "Документация на строительство ЖК Utlandia 2 в Ирпене"
+msgstr ""
+
+#: frontend/templates/frontend/docs.html:6
+msgid ""
+"Хотите купить квартиру от надежного застройщика в Ирпене? Главный принцип "
+"работы Tomin Family Development - открытость и честность со своими клиентами"
+msgstr ""
+
+#: frontend/templates/frontend/docs_detail.html:6
+msgid "Разрешение на строительство ЖК Utlandia 2 в г. Ирпень"
+msgstr ""
+
+#: frontend/templates/frontend/docs_detail.html:7
+msgid ""
+"Залог доверия к застройщику - наличие разрешительной документации на "
+"строительство. Покупка квартиры от застройщика Tomin Family Development - "
+"надежный выбор"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_chose_plans_btn.html:5
+msgid "Выбрать Планировки"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_flat_detail_form.html:6
+msgid "Цена"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_flat_detail_form.html:9
+#: frontend/templates/frontend/inc/_flat_detail.html:20
+msgid "Выбор комплектации"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_popup_form.html:7
+msgid "Закрить"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_popup_form.html:10
+msgid "Заполните форму"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_popup_form.html:11
+msgid "Наш менеджер свяжеться с вами в ближайшее время"
+msgstr ""
+
+#: frontend/templates/frontend/elements/_popup_form.html:15
+msgid "Отправить"
+msgstr ""
+
+#: frontend/templates/frontend/flat_detail.html:7
+#, python-format
+msgid ""
+"\n"
+"            Купить квартиру %(f_number)s в Ирпене на %(f_floor)s этаже в ЖК "
+"Utlandia 2\n"
+"        "
+msgstr ""
+
+#: frontend/templates/frontend/flat_detail.html:12
+#, python-format
+msgid ""
+"Хотите купить %(f_rooms)s комнатную квартиру площадью %(f_square)s м2 в "
+"Киевской области? Оперативный показ квартиры %(f_number)s в Ирпене ЖК "
+"Utlandia 2. Делаем все для вашего уюта"
+msgstr ""
+
+#: frontend/templates/frontend/floor_plan.html:6
+#, python-format
+msgid "Купить квартиру на %(f_floor)s этаже в Ирпене ЖК Utlandia 2"
+msgstr ""
+
+#: frontend/templates/frontend/floor_plan.html:7
+#, python-format
+msgid ""
+"Купить квартиру на %(f_floor)s этаже в Ирпене. Квартиры от %(f_min)s до "
+"%(f_max)s м2 в ЖК Utlandia 2. В продаже осталось мало квартир. Торопитесь! "
+"Предложение ограничено"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_block_main.html:19
+#: frontend/templates/frontend/inc/_main.html:25
+msgid "Описание"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_block_main.html:20
+#: frontend/templates/frontend/inc/_header.html:101
+#: frontend/templates/frontend/inc/_main.html:26
+msgid "Планировки"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_block_main.html:21
+#: frontend/templates/frontend/inc/_main.html:27
+msgid "Расположение"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_choose_floor.html:9
+msgid "Выбор этажа"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_choose_floor.html:11
+msgid ""
+"Кликайте на нужный этаж и получите доступ к плану. Выбирайте подходящую "
+"квартиру максимально комфортно!"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:13
+#: frontend/templates/frontend/inc/_flat_detail.html:50
+msgid "Закрытая территория"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:27
+msgid "Круглосуточная охрана"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:29
+msgid ""
+"Жилой комплекс Ютландия 24/7 находится под защитой частной охранной компании."
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:45
+msgid "Безопасность для детей"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:47
+msgid ""
+"Можете не переживать за малышей: они играют на современных площадках, "
+"защищены от машин и от посторонних людей."
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:63
+#: frontend/templates/frontend/inc/_footer.html:60
+#: frontend/templates/frontend/inc/_header.html:96
+#: frontend/templates/frontend/inc/_header.html:145
+#: frontend/templates/frontend/inc/_header.html:157
+#: frontend/templates/frontend/inc/_header.html:169
+#: frontend/templates/frontend/inc/_header.html:181
+#: frontend/templates/frontend/inc/_header.html:193
+#: frontend/templates/frontend/inc/_header.html:205
+#: frontend/templates/frontend/inc/_header.html:217
+#: frontend/templates/frontend/inc/_header.html:229
+msgid "Подземный паркинг"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_close_ter.html:65
+msgid ""
+"Ваш автомобиль под охраной, защищен от погодных и других внешних "
+"воздействий. Доступ к паркингу — через лифт с любого этажа."
+msgstr ""
+
+#: frontend/templates/frontend/inc/_constructions.html:10
+#: frontend/templates/frontend/inc/_footer.html:80
+#: frontend/templates/frontend/inc/_header.html:92
+msgid "Ход строительства"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:8
+msgid "Наши контакты"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:10
+msgid "Отдел продаж"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:11
+msgid "Ирпень, ул. Соборная, 1г корпус 1,"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:14
+msgid "Utlandia 1"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:15
+msgid "ул Чехова, 1А"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:18
+msgid "Utlandia 2"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_contacts.html:19
+msgid "ул Украинская, 1Б/1"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_docs.html:8
+msgid "Документы Utlandia"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_docs.html:40
+msgid "Смотреть"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:13
+#: frontend/templates/frontend/inc/_floor_plan.html:16
+#: frontend/templates/frontend/inc/_floor_plan.html:112
+msgid "Этаж"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:17
+#: frontend/templates/frontend/inc/_floor_plan.html:19
+#: frontend/templates/frontend/inc/_floor_plan.html:115
+msgid "Выбор планировки"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:42
+#: frontend/templates/frontend/inc/_floor_plan.html:35
+#: frontend/templates/frontend/inc/_floor_plan.html:131
+msgid "Площадь"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:51
+msgid "От машин и посторонних"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:54
+msgid "Терраса"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:55
+msgid "в каждой квартире"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:58
+msgid "Фасад"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:59
+msgid "Клинкер"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:62
+#: frontend/templates/frontend/inc/_footer.html:66
+#: frontend/templates/frontend/inc/_header.html:99
+msgid "Кладовки"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_flat_detail.html:63
+msgid "на этаже"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:26
+#: frontend/templates/frontend/inc/_floor_plan.html:122
+msgid "Квартир"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:30
+#: frontend/templates/frontend/inc/_floor_plan.html:126
+msgid "Комнаты"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:73
+#: frontend/templates/frontend/inc/_floor_plan.html:172
+msgid "Выберите секцию"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:77
+msgid "Вторая секция"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:79
+#: frontend/templates/frontend/inc/_floor_plan.html:178
+msgid "этаж"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:80
+#: frontend/templates/frontend/inc/_floor_plan.html:179
+msgid "квартир"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:81
+#: frontend/templates/frontend/inc/_floor_plan.html:180
+msgid "продано"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_floor_plan.html:176
+msgid "Первая Секция"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:41
+#: frontend/templates/frontend/inc/_header.html:70
+msgid "Записаться на просмотр"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:47
+msgid ""
+"\n"
+"                    Идеи для проекта почерпнуты из архитектурных концепций "
+"домов в Копенгагене. Мы воплотили\n"
+"                    все преимущества: простоту, практичность и красоту.\n"
+"                    "
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:57
+#: frontend/templates/frontend/inc/_header.html:109
+msgid "О комплексе"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:63
+#: frontend/templates/frontend/inc/_header.html:98
+msgid "Коммерческие помещения"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:71
+#: frontend/templates/frontend/inc/_header.html:85
+msgid "Главная"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:74
+#: frontend/templates/frontend/inc/_header.html:111
+msgid "Контакты"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:77
+#: frontend/templates/frontend/inc/_header.html:90
+msgid "Документы"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:87
+#: frontend/templates/frontend/inc/_header.html:129
+msgid "Следите за нами в соц сетях"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_footer.html:93
+msgid "Все права защищены"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_header.html:74
+msgid "Меню"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:13
+msgid "Удобное расположение"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:15
+msgid ""
+"\n"
+"              Жилой комплекс Utlandia расположен в Ирпене, рядом с парком, "
+"неподалеку от торговых\n"
+"          центров, образовательных, спортивных, развлекательных и "
+"медицинских учреждений.\n"
+"          "
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:23
+msgid "Скандинавский стиль"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:25
+msgid ""
+"\n"
+"                Идеи для проекта почерпнуты из архитектурных концепций домов "
+"в Копенгагене. Мы воплотили\n"
+"            все преимущества: простоту, практичность и красоту.\n"
+"            "
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:32
+msgid "Жизнь в тихом месте"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:34
+msgid ""
+"\n"
+"                Уютная территория: комфортная и тихая, несмотря на близкое "
+"расположение к центру города.\n"
+"            "
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:40
+msgid "Максимальная комплектация"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_location.html:42
+msgid ""
+"\n"
+"                Все необходимое для того, чтобы сделать косметический ремонт "
+"и заселиться в новую\n"
+"            квартиру без задержек.\n"
+"            "
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:8
+msgid "Удачная локация"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:15
+msgid "Торговые центры"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:21
+msgid "Парки"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:27
+msgid "Спорт и развлечения"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:33
+msgid "Заправки"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:39
+msgid "Медицина"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_lucky_location.html:45
+msgid "Обучение"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_main.html:20
+msgid "Живи классно&nbsp;!"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_main.html:21
+msgid "Современная квартира с большой террасой"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:14
+msgid "Собственная терраса"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:16
+msgid ""
+"Разводите сад, занимайтесь спортом, релаксируйте и наслаждайтесь свежим "
+"воздухом на личной территории площадью от 10 до 70 кв.м."
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:27
+msgid "Готовая"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:27
+msgid "отделка террасы"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:35
+msgid "Не выходя из дома"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:35
+msgid "Отдых и спорт"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:43
+msgid "Красивый вид"
+msgstr ""
+
+#: frontend/templates/frontend/inc/_terrace.html:43
+msgid "с любого этажа"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:8
+msgid "Купить квартиру в Ирпене в рассрочку | ЖК Utlandia 2"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:9
+msgid ""
+"Купить квартиру в Ирпене с ремонтом и в рассрочку в ЖК Utlandia 2. Квартиры "
+"от застройщика Tomin Family Development - лучшая недвижимость в Киевской "
+"области"
+msgstr ""
+
+#: frontend/templates/frontend/parking.html:8
+msgid "Купить квартиру с подземным паркингом в Ирпене Utlandia 2"
+msgstr ""
+
+#: frontend/templates/frontend/parking.html:9
+msgid ""
+"Хотите купить квартиру в Киевской области с подземным паркингом в "
+"многоквартирном доме? ЖК Utlandia 2 - современный комплекс в Ирпене для "
+"вашего комфорта"
+msgstr ""
+
+#: frontend/templates/frontend/storeroom.html:8
+msgid "Квартиры с кладовкой под Киевом в ЖК Utlandia | Ирпень"
+msgstr ""
+
+#: frontend/templates/frontend/storeroom.html:9
+msgid ""
+"Хотите, чтобы у вас была кладовка в квартире для вещей? Достаточно купить "
+"однокомнатную квартиру в Ирпене и выбрать лучшую кладовку для себя недорого"
+msgstr ""

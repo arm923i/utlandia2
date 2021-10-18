@@ -1,0 +1,207 @@
+{% load static %}
+{% load i18n %}
+
+
+
+<section class="storey">
+    <div class="storey__container _container">
+        <div class="storey__slider">
+            <div class="storey__slider-item">
+                <div class="storey__row">
+                    <div class="storey__column-storey">
+                        <div class="storey__img-block storey-img">
+                            <ul class="storey-img__crumbs crumbs">
+                                <li>
+                                    <a href="{% url 'home' %}#choose"><p
+                                            class="crumbs__item">{{ floor_number }} {% translate 'Этаж' %}</p></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="crumbs__item _active">{% translate 'Выбор планировки' %}</a>
+                                </li>
+                            </ul>
+                            <div class="storey-img__row img-storey">
+                                <div class="img-storey__info">
+                                    <div class="img-storey__info-box">
+                                        <p class="img-storey__info-box-num">{{ flats_list|length }}</p>
+                                        <h6 class="img-storey__info-box-text">{% translate 'Квартир' %}</h6>
+                                    </div>
+                                    <div class="img-storey__info-box">
+                                        <p class="img-storey__info-box-num">{{ flats_info.min_rooms }}-{{ flats_info.max_rooms }}</p>
+                                        <h6 class="img-storey__info-box-text">{% translate 'Комнаты' %}</h6>
+                                    </div>
+                                    <div class="img-storey__info-box">
+                                        <p class="img-storey__info-box-num">{{ flats_info.min_square }}-{{ flats_info.max_square }}
+                                            м<span>2</span></p>
+                                        <h6 class="img-storey__info-box-text">{% translate 'Площадь' %}</h6>
+                                    </div>
+                                </div>
+                                <div class="img-storey__img">
+                                    <div data-floor="floor" class="img-storey__img-bg">
+                                        <svg
+                                                width="585"
+                                                height="543"
+                                                viewBox="0 0 585 543"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <image
+                                                    href="{% static './img/back_sections/2'|add:'_'|add:floor_number|add:'_floor.jpg' %}"
+                                                    x="0"
+                                                    y="0"
+                                                    width="585"
+                                                    height="543"
+                                            />
+                                            {% for i in flats_list %}
+                                                {% if i.section == 2 %}
+                                                    <a href="{% url 'flat' i.idx_flatris %}">
+                                                        <path
+                                                                class="flat-h {% if i.status == 'Продано' or i.status == 'Резерв' %} _sold {% endif %}"
+                                                                d="{{ i.path }}"
+                                                        />
+                                                    </a>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="storey__column-storey">
+                        <div class="storey__slider-nav-box">
+                            <h4 class="storey-descr__label">{% translate 'Выберите секцию' %}</h4>
+                            <div class="storey__slider-nav"></div>
+                        </div>
+                        <div class="storey__description-block storey-descr">
+                            <h4 class="storey-descr__label">{% translate 'Вторая секция' %}</h4>
+                            <div class="storey-descr__crumbs descr-crumbs">
+                                <div class="descr-crumbs__item descr-crumbs__item--floor">{{ floor_number }} {% translate 'этаж' %}</div>
+                                <div class="descr-crumbs__item descr-crumbs__item--flat">{{ flats_list_section2|length }} {% translate 'квартир' %}</div>
+                                <div class="descr-crumbs__item descr-crumbs__item--sold">{{ flats_info.flats_sold_section2|length }} {% translate 'продано' %}</div>
+                            </div>
+                            <!-- <div class="storey-descr__table descr-table">
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Общая площадь</div>
+                                    <div class="descr-table__right">76 м2</div>
+                                </div>
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Площадь террасы</div>
+                                    <div class="descr-table__right">16 м2</div>
+                                </div>
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Площадь кухни</div>
+                                    <div class="descr-table__right">26 м2</div>
+                                </div>
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Выход на улицу</div>
+                                    <div class="descr-table__right">Украинская, Молдавская</div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="storey__slider-item">
+                <div class="storey__row">
+                    <div class="storey__column-storey">
+                        <div class="storey__img-block storey-img">
+                            <ul class="storey-img__crumbs crumbs">
+                                <li>
+                                    <a href="{% url 'home' %}#choose"><p
+                                            class="crumbs__item">{{ floor_number }} {% translate 'Этаж' %}</p></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="crumbs__item _active">{% translate 'Выбор планировки' %}</a>
+                                </li>
+                            </ul>
+                            <div class="storey-img__row img-storey">
+                                <div class="img-storey__info">
+                                    <div class="img-storey__info-box">
+                                        <p class="img-storey__info-box-num">{{ flats_list|length }}</p>
+                                        <h6 class="img-storey__info-box-text">{% translate 'Квартир' %}</h6>
+                                    </div>
+                                    <div class="img-storey__info-box">
+                                        <p class="img-storey__info-box-num">{{ flats_info.min_rooms }}-{{ flats_info.max_rooms }}</p>
+                                        <h6 class="img-storey__info-box-text">{% translate 'Комнаты' %}</h6>
+                                    </div>
+                                    <div class="img-storey__info-box">
+                                        <p class="img-storey__info-box-num">{{ flats_info.min_square }}-{{ flats_info.max_square }}
+                                            м<span>2</span></p>
+                                        <h6 class="img-storey__info-box-text">{% translate 'Площадь' %}</h6>
+                                    </div>
+                                </div>
+                                <div class="img-storey__img">
+                                    <div data-floor="floor" class="img-storey__img-bg">
+                                        <svg
+                                                width="575"
+                                                height="544"
+                                                viewBox="0 0 575 544"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <image
+                                                    href="{% static './img/back_sections/1'|add:'_'|add:floor_number|add:'_floor.jpg' %}"
+                                                    x="0"
+                                                    y="0"
+                                                    width="575"
+                                                    height="544"
+                                            />
+                                            {% for i in flats_list %}
+                                                {% if i.section == 1 %}
+                                                    <a href="{% url 'flat' i.idx_flatris %}">
+                                                        <path
+                                                                class="flat-h {% if i.status == 'Продано' or i.status == 'Резерв' %} _sold {% endif %}"
+                                                                d="{{ i.path }}"
+                                                        />
+                                                    </a>
+                                                {% endif %}
+
+                                            {% endfor %}
+
+
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="storey__column-storey">
+                        <div class="storey__slider-nav-box">
+                            <h4 class="storey-descr__label">{% translate 'Выберите секцию' %}</h4>
+                            <div class="storey__slider-nav"></div>
+                        </div>
+                        <div class="storey__description-block storey-descr">
+                            <h4 class="storey-descr__label">{% translate 'Первая Секция' %}</h4>
+                            <div class="storey-descr__crumbs descr-crumbs">
+                                <div class="descr-crumbs__item descr-crumbs__item--floor">{{ floor_number }} {% translate 'этаж' %}</div>
+                                <div class="descr-crumbs__item descr-crumbs__item--flat">{{ flats_list_section1|length }} {% translate 'квартир' %}</div>
+                                <div class="descr-crumbs__item descr-crumbs__item--sold">{{ flats_info.flats_sold_section1|length }} {% translate 'продано' %}</div>
+                            </div>
+                            <!-- <div class="storey-descr__table descr-table">
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Общая площадь</div>
+                                    <div class="descr-table__right">76 м2</div>
+                                </div>
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Площадь террасы</div>
+                                    <div class="descr-table__right">16 м2</div>
+                                </div>
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Площадь кухни</div>
+                                    <div class="descr-table__right">26 м2</div>
+                                </div>
+                                <div class="descr-table__row">
+                                    <div class="descr-table__left">Выход на улицу</div>
+                                    <div class="descr-table__right">Украинская, Молдавская</div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

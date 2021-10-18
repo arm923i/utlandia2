@@ -1,0 +1,44 @@
+{% load static %}
+
+<section class="location _section">
+    <!-- <div class="location__parallax-container _lp"> -->
+    <div
+            class="location__parallax parallax"
+            data-parallax-image="{{ image.url }}"
+    ></div>
+    <!-- </div> -->
+    <div class="location__container _container">
+        <div class="location__content">
+            <div class="location__title-box">
+                <h2 class="location__title _title">{{ header.title }}</h2>
+                <p class="location__text">
+                    {{ header.text }}
+                </p>
+            </div>
+            <div class="location__row">
+                {% for widget in widget_list %}
+                    <div class="location__column">
+                        <h4 class="location__column-title">{{ widget.title }}</h4>
+                        <p class="location__column-text">
+                            {{ widget.text }}
+                        </p>
+                    </div>
+                {% endfor %}
+
+
+                {#        <div class="location__column">#}
+                {#          <h4 class="location__column-title">{{ content.adv_header_2 }}</h4>#}
+                {#          <p class="location__column-text">#}
+                {#            {{ content.adv_content_2}}#}
+                {#          </p>#}
+                {#        </div>#}
+                {#        <div class="location__column">#}
+                {#          <h4 class="location__column-title">{{ content.adv_header_3 }}</h4>#}
+                {#          <p class="location__column-text">#}
+                {#            {{ content.adv_content_3}}#}
+                {#          </p>#}
+                {#        </div>#}
+            </div>
+        </div>
+    </div>
+</section>

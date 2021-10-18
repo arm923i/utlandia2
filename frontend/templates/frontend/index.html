@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{#{% load frontend_tags %}#}
+
+
+{% block head %}
+    <title>{% translate 'Купить квартиру в Ирпене в рассрочку | ЖК Utlandia 2' %}</title>
+    <meta name="description" content="{% translate 'Купить квартиру в Ирпене с ремонтом и в рассрочку в ЖК Utlandia 2. Квартиры от застройщика Tomin Family Development - лучшая недвижимость в Киевской области' %}">
+{% endblock %}  
+
+
+
+
+{% block content %}
+    {% include 'frontend/inc/_main.html' %}
+    {% include 'frontend/inc/_terrace.html' %}
+    {% include 'frontend/inc/_location.html' %}
+    {% include 'frontend/inc/_close_ter.html' %}
+    {% include 'frontend/inc/_lucky_location.html' %}
+    {% include 'frontend/inc/_choose_floor.html' %}
+{% endblock %}
+{% block js %}
+    <script>
+    $(document).on('include_by_ajax_all_loaded', function() {
+        console.log('Now all placeholders are loaded and replaced with content');
+    })
+    </script>
+{% endblock %}

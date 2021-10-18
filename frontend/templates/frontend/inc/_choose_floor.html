@@ -1,0 +1,58 @@
+{% load static %}
+{% load i18n %}
+
+
+<section class="choose _src-item _section">
+    <a name="choose"></a>
+    <div class="choose__container _container">
+        <div class="choose__title-box">
+            <h2 class="choose__title _title">{% translate 'Выбор этажа' %}</h2>
+            <p class="choose__text">
+                {% translate 'Кликайте на нужный этаж и получите доступ к плану. Выбирайте подходящую квартиру максимально комфортно!' %}
+            </p>
+        </div>
+        <div class="choose__content">
+            <div class="choose__img-box">
+                <div class="choose__floors floors">
+                    <svg
+                            width="1531"
+                            height="928"
+                            viewBox="0 0 1531 928"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <foreignobject class="" x="950" y="100" width="50" height="828">
+                            <div class="floors__num-box floor-num">
+                                <div class="floor-num__num">9</div>
+                                <div class="floor-num__num">8</div>
+                                <div class="floor-num__num">7</div>
+                                <div class="floor-num__num">6</div>
+                                <div class="floor-num__num">5</div>
+                                <div class="floor-num__num">4</div>
+                                <div class="floor-num__num">3</div>
+                                <div class="floor-num__num">2</div>
+                                <div class="floor-num__num">1</div>
+                            </div>
+                        </foreignobject>
+                        <image
+                                href="{% static './img/main6_choose_floor/bg.jpg' %}"
+                                x="0"
+                                y="0"
+                                width="1531"
+                                height="928"
+                        ></image>
+                        {% for floor in floor_list %}
+                            <a href="{% url 'get_floor' floor.number 1 %}">
+                                <path
+                                        class="floors__floor"
+                                        d="{{ floor.path }}"
+
+                                />
+                            </a>
+                        {% endfor %}
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

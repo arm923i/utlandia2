@@ -1,0 +1,93 @@
+{% load static %}
+{% load i18n %}
+{#{% load seo %}#}
+
+
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <!-- <link rel="preload" href="{% static 'fonts/MabryPro-Regular.woff' %}" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="{% static 'fonts/MabryPro-Medium.woff' %}" as="font" type="font/woff" crossorigin> -->
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6R2KR2');</script>
+<!-- End Google Tag Manager -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131404041-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-131404041-1', {'send_page_view': false});
+        </script>
+        <script>
+            function initRingostat(){
+                if (typeof(ga) !== 'undefined') {
+                    ga('gtag_UA_131404041_1.require','ringostat');
+                    gtag('event', 'page_view');
+                    (function (d,s,u,e,p) {
+                        p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+                    })(document, 'script', 'https://script.ringostat.com/v4/38/3831b3607780b2e6d3483ff1f4292fdbccb0883e.js');
+                } else {
+                    setTimeout(initRingostat,200);
+                }
+            }
+            initRingostat();
+        </script>
+        {% block head %}{% endblock %}  
+       
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.min.css' %}"/>
+        <link rel="stylesheet" href="https://aero.lun.ua/panorama.css">
+        <link rel="shortcut icon" href="{% static './img/icons/favicon-16x16.png' %}"/>
+        
+        <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+    </head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6R2KR2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper {{ request.path|slice:"4:"|yesno:"_white-header" }}">
+
+    {% include 'frontend/inc/_header.html' %}
+    {% block content %}{% endblock %}
+    {% block footer %}{% include 'frontend/inc/_footer.html' %}{% endblock %}
+
+</div>
+
+{% include 'frontend/elements/_popup_form.html' %}
+<script>
+    (function (w, d, s, h, id) {
+        w.roistatProjectId = id;
+        w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
+        var js = d.createElement(s);
+        js.charset = "UTF-8";
+        js.async = 1;
+        js.src = p + h + u;
+        var js2 = d.getElementsByTagName(s)[0];
+        js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', 'bc21462d7cfc4aeee1489d97dcf8b719');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/app.min.js' %}"></script>
+{% block js %}{% endblock %}
+<!-- <script type="text/javascript">
+    (function(d, w, s) {
+    var widgetHash = 'jx4gt7ok0ykkp8b3bqsq', ctw = d.createElement(s); ctw.type = 'text/javascript'; ctw.async = true;
+    ctw.src = '//widgets.binotel.com/calltracking/widgets/'+ widgetHash +'.js';
+    var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(ctw, sn);
+    })(document, window, 'script');
+    </script> -->
+</body>
+</html>

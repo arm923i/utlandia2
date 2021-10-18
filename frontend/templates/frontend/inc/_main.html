@@ -1,0 +1,33 @@
+{% load static %}
+{% load i18n %}
+
+
+
+
+<section class="main">
+  <div class="main__bg _ibg _lp">
+    <picture>
+      <source media="(min-width: 650px)" srcset="{% static './img/main/main.jpg' %}"/>
+      <source type="image/webp" media="(min-width: 650px)" srcset="{% static './img/main/main.webp' %}"/>
+      <source type="image/webp" srcset="{% static './img/main/main_light.webp' %}"/>
+      <img src="{% static './img/main/main_light.jpg' %}" alt="Utlandia 2 project image"/>
+  </picture>
+  </div>
+  <div class="main__cover">
+    <div class="main__container _container">
+    <div class="main__title-box" >
+      <div class="main__title-box-content">
+        <h1 class="main__title" >{% translate 'Живи классно&nbsp;!' %}</h1>
+        <h3 class="main__subtitle">{% translate 'Современная квартира с большой террасой' %}</h3>
+      </div>
+    </div>
+    <ul class="main__list">
+      <li><a href="#terasse" class="main__link _goto">{% translate 'Описание' %}</a></li>
+      <li><a href="#choose" class="main__link _goto">{% translate 'Планировки' %}</a></li>
+      <li><a href="#lucky" class="main__link _goto">{% translate 'Расположение' %}</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+
+{% include 'frontend/elements/_chose_plans_btn.html' %}

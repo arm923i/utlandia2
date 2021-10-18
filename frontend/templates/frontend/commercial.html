@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load frontend_tags %}
+
+
+{% block head %}
+    <title>{% translate 'Купить коммерческую недвижимость в ЖК Utlandia 2 | Ирпень' %}</title>
+    <meta name="description" content="{% translate 'Хотите купить помещение под сдачу в аренду? Нежилые помещения от застройщика в ЖК Utlandia 2 - выгодная инвестиция в коммерческую недвижимость в Ирпене' %}">
+{% endblock %} 
+
+
+
+{% block content %}
+{% show_block_main type='commercial main 1' %}
+{% show_block_tiw type='commercial tiw 1' %}
+{% include 'frontend/inc/_lucky_location.html' %}
+{% show_block_twp type='commercial twp 1' %}
+{% show_block_itw type='commercial itw 1' %}
+{% include 'frontend/inc/_choose_floor.html' %}
+{% endblock %}

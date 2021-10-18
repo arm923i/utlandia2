@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+    <title>{% translate 'Документация на строительство ЖК Utlandia 2 в Ирпене' %}</title>
+    <meta name="description" content="{% translate 'Хотите купить квартиру от надежного застройщика в Ирпене? Главный принцип работы Tomin Family Development - открытость и честность со своими клиентами' %}">
+{% endblock %}  
+
+
+{% block content %}
+    {% include 'frontend/inc/_docs.html' %}
+    </form>
+{% endblock %}

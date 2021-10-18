@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+    <title>
+        {% blocktranslate with f_number=flats_item.number f_floor=flats_item.floor %}
+            Купить квартиру {{ f_number }} в Ирпене на {{ f_floor }} этаже в ЖК Utlandia 2
+        {% endblocktranslate %}
+    </title>
+    <meta name="description"
+          content="{% blocktranslate with f_number=flats_item.number f_rooms=flats_item.rooms f_square=flats_item.square_total %}Хотите купить {{ f_rooms }} комнатную квартиру площадью {{ f_square }} м2 в Киевской области? Оперативный показ квартиры {{ f_number }} в Ирпене ЖК Utlandia 2. Делаем все для вашего уюта{% endblocktranslate %}">
+{% endblock %}
+
+{% block content %}
+    {% include 'frontend/inc/_flat_detail.html' %}
+    </form>
+{% endblock %}
+{% block footer %}{% endblock %}

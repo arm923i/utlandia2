@@ -1,0 +1,18 @@
+ <svg
+                  width="575"
+                  height="544"
+                  viewBox="0 0 575 544"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <image
+                    href="./img/back_sections/c1_10_floor.jpg"
+                    x="0"
+                    y="0"
+                    width="575"
+                    height="544"
+                  />
+                  <path class="flat-h"
+                    d="M219.5 225H163.5V231H174.5V282H78V458.5H293.5L293 345H261.5V289H267.5V285.5H219.5V225Z"
+                  />
+                </svg>

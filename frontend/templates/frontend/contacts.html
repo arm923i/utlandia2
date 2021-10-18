@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+    <title>{% translate 'ЖК Utlandia 2 контактная информация | Квартира в Ирпене' %}</title>
+    <meta name="description" content="{% translate 'Успейте купить квартиру в новостройке ЖК Utlandia 2 в г. Ирпень. Оперативный показ квартир и помещений под бизнес. Офис-продаж в центре города' %}">
+{% endblock %} 
+
+{% block content %}
+    {% include 'frontend/inc/_contacts.html' %}
+{% endblock %}

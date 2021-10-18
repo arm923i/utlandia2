@@ -1,0 +1,76 @@
+{% load static %}
+{% load i18n %}
+
+
+<section class="close-ter _section">
+  <div class="close-ter__body">
+    <div class="close-ter__bg _ibg">
+      <picture><source srcset="{% static './img/main4_close_territory/bg.webp' %}" type="image/webp"><img src="{% static './img/main4_close_territory/bg.jpg' %}" loading="lazy" alt="Utlandia 2 photo" /></picture>
+    </div>
+    <div class="close-ter__container _container">
+      <div class="close-ter__content">
+        <div class="close-ter__title-box">
+          <h2 class="close-ter__title _title">{% translate 'Закрытая территория' %}</h2>
+        </div>
+        <div class="close-ter__slider-box">
+          <div class="close-ter__slider slider-close">
+            <div class="slider-close__item">
+              <div class="slider-close__row">
+                <div class="slider-close__column">
+                  <div class="slider-close__icon">
+                    <picture><source srcset="{% static './img/main4_close_territory/icon01.svg' %}" type="image/webp"><img src="{% static './img/main4_close_territory/icon01.svg' %}" loading="lazy" alt="Security icon" /></picture>
+                  </div>
+                </div>
+                <div class="slider-close__column">
+                  <div class="slider-close__content">
+                    <div class="slider-close__pagin">01 - <span> 03</span></div>
+                    <h4 class="slider-close__title">{% translate 'Круглосуточная охрана' %}</h4>
+                    <div class="slider-close__text">
+                      {% translate 'Жилой комплекс Ютландия 24/7 находится под защитой частной охранной компании.' %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-close__item">
+              <div class="slider-close__row">
+                <div class="slider-close__column">
+                  <div class="slider-close__icon">
+                    <picture><source srcset="{% static './img/main4_close_territory/icon02.svg' %}" type="image/webp"><img src="{% static './img/main4_close_territory/icon02.svg' %}" loading="lazy" alt="Family icon" /></picture>
+                  </div>
+                </div>
+                <div class="slider-close__column">
+                  <div class="slider-close__content">
+                    <div class="slider-close__pagin">02 - <span> 03</span></div>
+                    <h4 class="slider-close__title">{% translate 'Безопасность для детей' %}</h4>
+                    <div class="slider-close__text">
+                      {% translate 'Можете не переживать за малышей: они играют на современных площадках, защищены от машин и от посторонних людей.' %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-close__item">
+              <div class="slider-close__row">
+                <div class="slider-close__column">
+                  <div class="slider-close__icon">
+                    <picture><source srcset="{% static './img/main4_close_territory/icon03.svg' %}" type="image/webp"><img src="{% static './img/main4_close_territory/icon03.svg' %}" loading="lazy" alt="Parking icon" /></picture>
+                  </div>
+                </div>
+                <div class="slider-close__column">
+                  <div class="slider-close__content">
+                    <div class="slider-close__pagin">03 - <span> 03</span></div>
+                    <h4 class="slider-close__title">{% translate 'Подземный паркинг' %}</h4>
+                    <div class="slider-close__text">
+                      {% translate 'Ваш автомобиль под охраной, защищен от погодных и других внешних воздействий. Доступ к паркингу — через лифт с любого этажа.' %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

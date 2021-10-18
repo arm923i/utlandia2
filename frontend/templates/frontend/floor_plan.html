@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+    <title>{% blocktranslate with f_floor=floor_number %}Купить квартиру на {{f_floor}} этаже в Ирпене ЖК Utlandia 2{% endblocktranslate %}</title>
+    <meta name="description" content="{% blocktranslate with f_floor=flats_info.floor_number f_min=flats_info.min_square f_max=flats_info.max_square%}Купить квартиру на {{f_floor}} этаже в Ирпене. Квартиры от {{f_min}} до {{f_max}} м2 в ЖК Utlandia 2. В продаже осталось мало квартир. Торопитесь! Предложение ограничено{% endblocktranslate %}"/>
+{% endblock %}
+
+{% block content %}
+
+    {% include 'frontend/inc/_floor_plan.html' %}
+
+{% endblock %}
+{% block footer %}{% endblock %}

@@ -1,0 +1,32 @@
+{% load static %}
+
+
+<section class="about-2">
+
+    <div class="about-2__container _container">
+        <div class="about-2__content">
+            <h3 class="about-2__title _title">{{ header.title }}</h3>
+            <div class="about-2__items">
+                {% for widget in widget_list %}
+                    <div class="about-2__item">
+                        <div class="about-2__item-row">
+                            <div class="about-2__item-column">
+                                <div class="about-2__icon">
+                                    <img src="{{ widget.icon.url }}" alt="icon"/>
+                                </div>
+                            </div>
+                            <div class="about-2__item-column">
+                                <h4 class="about-2__label">{{ widget.title }}</h4>
+                                <div class="about-2__text">
+                                    {{ widget.text }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+ <svg
+                  width="585"
+                  height="543"
+                  viewBox="0 0 585 543"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <image
+                   href="./img/back_sections/c2_08_floor.jpg"
+                    x="0"
+                    y="0"
+                    width="585"
+                    height="543"
+                  />
+                  <path class="flat-h"
+                    d="M212.5 206.5V194H128V287H117V376H220.5V293H215.5V287V206.5H212.5Z"
+                  />
+                  <path class="flat-h"
+                    d="M316.5 379V357H343V287.5H292V193H229.5V226H216V287.5H220.5V377.5H117V468H257V379H316.5Z"
+                  />
+                  <path class="flat-h"
+                    d="M342.5 468V382.5H316.5V377H256V468H257V503H316.5V468H342.5Z"
+                  />
+                  <path class="flat-h"
+                    d="M358 382.5H345H342.5V488.5H374.5V524H434V483.5H430.5V382.5H372V386.5H358V382.5Z"
+                  />
+                  <path class="flat-h"
+                    d="M520.5 382.5H430.5V488.5H434H462.5V524H522.5V488.5H520.5V382.5Z"
+                  />
+                  <path class="flat-h"
+                    d="M458 356.5V382V383H520V468H582.5V286.5H522.5V273H428.5V312.5H460V356.5H458Z"
+                  />
+                </svg>

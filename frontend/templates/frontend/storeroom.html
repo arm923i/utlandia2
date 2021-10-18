@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% load frontend_tags %}
+
+{% block head %}
+    <title>{% translate 'Квартиры с кладовкой под Киевом в ЖК Utlandia | Ирпень' %}</title>
+    <meta name="description" content="{% translate 'Хотите, чтобы у вас была кладовка в квартире для вещей? Достаточно купить однокомнатную квартиру в Ирпене и выбрать лучшую кладовку для себя недорого' %}">
+{% endblock %} 
+
+
+
+
+{% block content %}
+    {% show_block_main type='storeroom main 1' %}
+    {% show_block_tiw type='storeroom tiw 1' %}
+    {% include 'frontend/inc/_lucky_location.html' %}
+    {% show_block_twp type='storeroom twp 1' %}
+    {% show_block_itw type='storeroom itw 1' %}
+    {% include 'frontend/inc/_choose_floor.html' %}
+{% endblock %}

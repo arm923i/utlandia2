@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block head %}
+    <title>{% translate 'ЖК Utlandia 2 | Ход строительства | Ирпень новостройки' %}</title>
+    <meta name="description" content="{% translate 'Узнать о ходе строительства жилого комплекса Utlandia 2 в г. Ирпень. Квартиры от застройщика в новостройках Киевской области. Готовимся к сдаче объекта' %}">
+{% endblock %} 
+
+{% block content %}
+    {% include 'frontend/inc/_constructions.html' %}
+{% endblock %}
+{% block js %}
+    
+{% endblock %}

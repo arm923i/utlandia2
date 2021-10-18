@@ -1,0 +1,106 @@
+{% load i18n %}
+{% load mathfilters %}
+<form action="{% url 'flat' flats_item.idx_flatris %}" method="post"
+                      class="flat__description-block flat-descr">{% csrf_token %}
+<!--
+                    <div class="flat-descr__price-box">
+                        <p class="flat-descr__price-box-text">{% translate 'Цена' %}</p>
+                        <p class="flat-descr__price-box-num" style="filter:blur(5px);">{{ flats_item.price_m2|add:-30|mul:flats_item.square_total }} у.е</p>
+                    </div>
+-->
+                    <h4 class="flat-descr__label">{% translate 'Выбор комплектации' %}</h4>
+                    <div class="flat-descr__spoller-box">
+                        <div class="flat-descr__spoller flat-spoller _spols">
+                            <div class="flat-spoller__item">
+                                <div class="flat-spoller__title _spols-item">
+                                    <div class="flat-spoller__title-text">White Box</div>
+                                    <div class="flat-spoller__title-num" style="color: white">$ {{ flats_item.price_m2 }} <span>m</span>
+                                    </div>
+                                </div>
+                                <div class="flat-spoller__body _spols-block _spols">
+                                    <p class="flat-spoller__body-item">
+                                        — Звукоизолированные перестенки из керамоблока;
+                                    </p>
+                                    <p class="flat-spoller__body-item">— Лазерная стяжка пола;</p>
+                                    <p class="flat-spoller__body-item">
+                                        — Электропроводка и водопровод разведены по точкам подключения;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Установлены качественные радиаторы отопления; на кухне и в санузлах есть
+                                        разводка системы «теплый пол»;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Штукатурка — гипсовая, под поклейку обоев;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Установлены приборы учета воды, электроэнергии, газа;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Предусмотрена разводка под датчики воды и сигнализации;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Входная дверь — бронированная с декоративной МДФ-накладкой;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Окна — Rehau 70мм, двойной стеклопакет/аргон, 5-камерный профиль.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flat-spoller__item">
+                                <div class="flat-spoller__title _spols-item _active">
+                                    <div class="flat-spoller__title-text">Base</div>
+                                    <div class="flat-spoller__title-num" style="color: white">$ {{ flats_item.price_m2|add:-30 }}
+                                        <span>m</span></div>
+                                </div>
+                                <div class="flat-spoller__body _spols-block _spols _active">
+                                    <p class="flat-spoller__body-item">
+                                        — В квартиру заведены коммуникации (электричество и водоснабжение); входная
+                                        дверь
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Есть газоснабжение (дополнительно нужно установить двухконтурный котел с
+                                        программатором);
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Установлены приборы учета воды, электроэнергии, газа;
+                                    </p>
+                                    <p class="flat-spoller__body-item">
+                                        — Входная дверь — бронированная с декоративной ДФ-накладкой;
+                                    </p>
+                                    <p class="flat-spoller__body-item">— Окна — REhau Brillant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flat-descr__radio-box radio">
+
+
+                        {% for i in form.pay_type %}
+                            <div class="radio__item">
+
+                                <input type="radio" value="{{ i.value }} " name="pay_type" />
+
+                                <span>{{ i }}</span>
+                            </div>
+                        {% endfor %}
+
+
+
+                    </div>
+                    <input type="hidden" name="plan_price" value="{{ flats_item.price }}">
+                    <input type="hidden" name="plan_type" value="{{ flats_item.type }}">
+                    <input type="hidden" name="plan_number" value="{{ flats_item.number }}">
+                    <input type="hidden" name="plan_section" value="{{ flats_item.section }}">
+                    <input type="hidden" name="plan_floor" value="{{ flats_item.floor }}">
+                    <div class="flat-descr__tel">
+
+                        {{ form.phone_number }}
+                    </div>
+                    <div class="flat-descr__button-box">
+                        <button type="submit" id="btn01-choseplan-send" class="flat-descr__button button _popup-link">Записаться на просмотр
+                        </button>
+                        <!-- <a href="#form" class="button _popup-link">Записаться на просмотр</a> -->
+                    </div>
+                </form>

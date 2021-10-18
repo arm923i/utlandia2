@@ -1,0 +1,46 @@
+{% load static %}
+{% load i18n %}
+
+<section class="licence">
+    <div class="licence__container _container">
+        <div class="licence__body">
+
+            <div class="licence__arrow">
+                <a href="{% url 'docs' %}" class="licence__link">
+                    <picture>
+                        <source srcset="{% static './img/docs_section/licence/arr_icon.svg' %}" type="image/webp">
+                        <img src="{% static './img/docs_section/licence/arr_icon.svg' %}" alt="arrow icon"/></picture>
+                </a>
+            </div>
+
+            <div class="licence__img-slider">
+                {% for document in docs_list %}
+                    <div class="licence__slider-item">
+                        <div class="licence__title-box">
+                            <h2 class="licence__title">{{ document.title }}</h2>
+                            <p class="licence__date">{{ document.date_received }}</p>
+                        </div>
+                        <div class="licence__content-row">
+                            <div class="licence__imgs-box">
+                                {% for image in document.docs_images.all %}
+                                    <picture>
+                                        <img src="{{ image.image.url }}" alt="{{ document.title }}"/>
+                                    </picture>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="licence__labels-slider">
+                {% for document in docs_list %}
+                    <div class="licence__label">{{ document.title}}</div>
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+</section>

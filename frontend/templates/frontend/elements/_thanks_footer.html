@@ -1,0 +1,14 @@
+{% load static %}
+
+<footer class="thanks__footer">
+    <div class="thanks__footer-container _container">
+        <div class="thanks__footer-box">
+            <a href="{% url 'home' %}" class="thanks__footer-link">Перейти на головну</a>
+            <div class="thanks__footer-logo">
+                <picture>
+                    <source srcset="{% static './img/thanks/tomin_logo.svg' %}" type="image/webp">
+                    <img src="{% static './img/thanks/tomin_logo.svg' %}" alt="tomin_logo"/></picture>
+            </div>
+        </div>
+    </div>
+</footer>

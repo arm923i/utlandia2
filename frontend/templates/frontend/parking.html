@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% load frontend_tags %}
+
+{% block head %}
+    <title>{% translate 'Купить квартиру с подземным паркингом в Ирпене Utlandia 2' %}</title>
+    <meta name="description" content="{% translate 'Хотите купить квартиру в Киевской области с подземным паркингом в многоквартирном доме? ЖК Utlandia 2 - современный комплекс в Ирпене для вашего комфорта' %}">
+{% endblock %} 
+
+
+
+
+{% block content %}
+    {% show_block_main type='parking main 1' %}
+    {% show_block_tiw type='parking tiw 1' %}
+    {% include 'frontend/inc/_lucky_location.html' %}
+    {% show_block_twp type='parking twp 1' %}
+    {% show_block_itw type='parking itw 1' %}
+    {% include 'frontend/inc/_choose_floor.html' %}
+{% endblock %}

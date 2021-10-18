@@ -1,0 +1,26 @@
+{% load static %}
+{% load i18n %}
+
+
+
+
+<section class="main">
+  <div class="main__bg _ibg _lp">
+    <img src="{{ image.url}}" alt="{{ header.title }}" />
+  </div>
+  <div class="main__cover">
+    <div class="main__title-box" >
+      <div class="main__title-box-content">
+        <h1 class="main__title" >{{ header.title }}</h1>
+        <h3 class="main__subtitle">{{ header.text }}</h3>
+      </div>
+    </div>
+    <ul class="main__list">
+      <li><a href="#terasse" class="main__link _goto">{% translate 'Описание' %}</a></li>
+      <li><a href="{% url 'home' %}#choose" class="main__link _goto">{% translate 'Планировки' %}</a></li>
+      <li><a href="#lucky" class="main__link _goto">{% translate 'Расположение' %}</a></li>
+    </ul>
+  </div>
+</section>
+
+{% include 'frontend/elements/_chose_plans_btn.html' %}

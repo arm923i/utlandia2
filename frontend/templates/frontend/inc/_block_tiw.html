@@ -1,0 +1,31 @@
+{% load static %}
+
+
+<section class="terasse _src-item _section ">
+    <div class="terasse__bg _ibg">
+            <img src="{{ image.url}}" alt="apartments"/>
+
+        <div class="terasse__container _container">
+            <div class="terasse__content">
+
+                <div class="terasse__title-box">
+                    <h2 class="terasse__title _title">{{ header.title }}</h2>
+                    <p class="terasse__text">
+                        {{ header.text}}
+                    </p>
+                </div>
+
+                <div class="terasse__row">
+                    {% for widget in widget_list %}
+                    <div class="terasse__column">
+                        <div class="terasse__icon-box">
+                                <img src="{{ widget.icon.url }}" alt="house icon"/>
+                        </div>
+                        <div class="terasse__info">{{ widget.title }}<span>{{ widget.text }}</span></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

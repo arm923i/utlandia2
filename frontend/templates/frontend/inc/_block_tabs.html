@@ -1,0 +1,37 @@
+{% load static %}
+
+<section class="about-4">
+    <div class="about-4__container _container">
+        <div class="about-4__content">
+            <div class="about-4__slider-box">
+                <div class="about-4__slider-pagin about-pagin">
+                    <ul class="about-pagin__list">
+                        {% for widget in widget_list %}
+                        <li class="about-pagin__item">{{ widget.title }}</li>
+                         {% endfor %}
+                    </ul>
+                </div>
+                <div class="about-4__slider about-slider">
+                    {% for widget in widget_list %}
+                        <div class="about-slider__item">
+                            <div class="about-slider__item-row">
+                                <div class="about-slider__item-column">
+                                    <div class="about-slider__img _ibg">
+                                            <img src="{{ widget.icon.url }}" alt="image"/>
+
+                                    </div>
+                                </div>
+                                <div class="about-slider__item-column">
+                                    <h3 class="about-slider__title">{{ widget.title }}</h3>
+                                    <p class="about-slider__text">
+                                       {{ widget.text }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

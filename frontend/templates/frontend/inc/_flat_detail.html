@@ -1,0 +1,75 @@
+{% load static %}
+{% load i18n %}
+
+<section class="flat">
+    <div class="flat__container _container">
+        <div class="flat__row">
+            <div class="flat__column-flat">
+                <div class="flat__img-block flat-img">
+                    <div class="flat-img__top-row">
+                        <ul class="flat-img__crumbs crumbs">
+                            <li>
+                                <a href="{% url 'home' %}#choose"><p
+                                        class="crumbs__item">{{ flats_item.floor }} {% translate 'Этаж' %}</p></a>
+                            </li>
+                            <li>
+                                <a href="{% url 'get_floor' flats_item.floor flats_item.section %}"
+                                   class="crumbs__item">{% translate 'Выбор планировки' %}</a>
+                            </li>
+                            <li>
+                                <a href="#" class="crumbs__item _active">{% translate 'Выбор комплектации' %}</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flat-img__row img-flat">
+                        <div class="img-flat__info">
+                            <div class="img-flat__info-box">
+                                <p class="img-flat__info-box-num">{{ flats_item.type }}</p>
+                                <h6 class="img-flat__info-box-text">Тип планировки</h6>
+                            </div>
+                            <div class="img-flat__info-box">
+                                <p class="img-flat__info-box-num">{{ flats_item.floor }}</p>
+                                <h6 class="img-flat__info-box-text">Этаж</h6>
+                            </div>
+                            <div class="img-flat__info-box">
+                                <p class="img-flat__info-box-num">{{ flats_item.section }}</p>
+                                <h6 class="img-flat__info-box-text">Секция</h6>
+                            </div>
+                            <div class="img-flat__info-box">
+                                <p class="img-flat__info-box-num">{{ flats_item.square_total }} м<span>2</span></p>
+                                <h6 class="img-flat__info-box-text">{% translate 'Площадь' %}</h6>
+                            </div>
+                        </div>
+                        <div class="img-flat__img _ibg">
+                            <img src="{{ flats_item.img_url }}" alt="{{ flats_item.type }}"/>
+                        </div>
+                        <div class="img-flat__add add-info">
+                            <div class="add-info__box">
+                                <h6 class="add-info__title">{% translate 'Закрытая территория' %}</h6>
+                                <div class="add-info__text">{% translate 'От машин и посторонних' %}</div>
+                            </div>
+                            <div class="add-info__box">
+                                <h6 class="add-info__title">{% translate 'Терраса' %}</h6>
+                                <div class="add-info__text">{% translate 'в каждой квартире' %}</div>
+                            </div>
+                            <div class="add-info__box">
+                                <h6 class="add-info__title">{% translate 'Фасад' %}</h6>
+                                <div class="add-info__text">{% translate 'Клинкер' %}</div>
+                            </div>
+                            <div class="add-info__box">
+                                <h6 class="add-info__title">{% translate 'Кладовки' %}</h6>
+                                <div class="add-info__text">{% translate 'на этаже' %}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flat__column-flat">
+                {% include 'frontend/elements/_flat_detail_form.html' %}
+            </div>
+        </div>
+    </div>
+</section>

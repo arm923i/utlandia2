@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+<section class="location _section">
+  <!-- <div class="location__parallax-container _lp"> -->
+  <div
+    class="location__parallax parallax"
+    data-parallax-image="{% static './img/main3_location/main3_bg.jpg' %}"
+  ></div>
+  <!-- </div> -->
+  <div class="location__container _container">
+    <div class="location__content">
+      <div class="location__title-box">
+        <h2 class="location__title _title">{% translate 'Удобное расположение' %}</h2>
+        <p class="location__text">
+          {% blocktranslate %}
+              Жилой комплекс Utlandia расположен в Ирпене, рядом с парком, неподалеку от торговых
+          центров, образовательных, спортивных, развлекательных и медицинских учреждений.
+          {% endblocktranslate %}
+        </p>
+      </div>
+      <div class="location__row">
+        <div class="location__column">
+          <h4 class="location__column-title">{% translate 'Скандинавский стиль' %}</h4>
+          <p class="location__column-text">
+            {% blocktranslate %}
+                Идеи для проекта почерпнуты из архитектурных концепций домов в Копенгагене. Мы воплотили
+            все преимущества: простоту, практичность и красоту.
+            {% endblocktranslate %}
+          </p>
+        </div>
+        <div class="location__column">
+          <h4 class="location__column-title">{% translate 'Жизнь в тихом месте' %}</h4>
+          <p class="location__column-text">
+            {% blocktranslate %}
+                Уютная территория: комфортная и тихая, несмотря на близкое расположение к центру города.
+            {% endblocktranslate %}
+          </p>
+        </div>
+        <div class="location__column">
+          <h4 class="location__column-title">{% translate 'Максимальная комплектация' %}</h4>
+          <p class="location__column-text">
+            {% blocktranslate %}
+                Все необходимое для того, чтобы сделать косметический ремонт и заселиться в новую
+            квартиру без задержек.
+            {% endblocktranslate %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

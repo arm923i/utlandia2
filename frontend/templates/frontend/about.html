@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load frontend_tags %}
+
+{% block head %}
+    <title>{% translate 'Купить квартиру в новостройке ЖК Utlandia 2 в Ирпене' %}</title>
+    <meta name="description" content="{% translate 'Хотите купить квартиру в Ирпене с ремонтом в рассрочку? Каждая квартира в новостройке ЖК Utlandia 2 создана с любовью для вашего комфорта и уюта' %}">
+{% endblock %} 
+
+{% block content %}
+    {% show_block_ti type='about ti 1' %}
+    {% show_block_icons_place type='about icons_place 1' %}
+    {% include 'frontend/inc/_lucky_location.html' %}
+    {% show_block_tabs type='about tabs 1' %}
+{% endblock %}

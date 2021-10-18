@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block head %}
+    <title>{% translate 'Разрешение на строительство ЖК Utlandia 2 в г. Ирпень' %}</title>
+    <meta name="description" content="{% translate 'Залог доверия к застройщику - наличие разрешительной документации на строительство. Покупка квартиры от застройщика Tomin Family Development - надежный выбор' %}">
+{% endblock %} 
+
+{% block content %}
+    {% include 'frontend/inc/_docs_detail.html' %}
+{% endblock %}

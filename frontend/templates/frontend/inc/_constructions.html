@@ -1,0 +1,71 @@
+{% load static %}
+{% load i18n %}
+
+
+<section class="constructions">
+    <div class="constructions__container _container">
+
+        <div class="constructions__body">
+            <div class="constructions__title-box">
+                <h2 class="constructions__title _title">{% translate 'Ход строительства' %}</h2>
+            </div>
+            <div class="constructions__sliders-box">
+                <div class="constructions__slider-small-box">
+                    <div class="constructions__slider-small">
+                        {% for i in dev_history_list %}
+                        <div class="constructions__slide-small small-slide">
+                            <div class="small-slide__data">{{ i.created_at|date:"M Y" }}</div>
+
+
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="constructions__slider-big-box">
+                    <div class="constructions__slider-big">
+                        {% for i in dev_history_list %}
+                        <div class="constructions__slide-big big-slide">
+                            <div class="big-slide__row">
+                                <div class="big-slide__column-content video_wrapper video_wrapper_full js-videoWrapper">
+
+                                    <iframe src="" frameborder="0" data-video class="videoIframe js-videoIframe"
+                                        width="100%" height="90%"
+                                        data-src="{{ i.video_url }}?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen allowTransparency="true"></iframe>
+                                    <button class="videoPoster js-videoPoster" style="
+                      background-image: url('https://i.ytimg.com/vi_webp/{{ i.title }}/sddefault.webp');
+                    "></button>
+
+                                </div>
+                                <div class="big-slide__column-info">
+                                    {% for i in dev_category_list %}
+                                    <div class="big-slide__info-cell info-cell">
+                                        <div class="info-cell__info ellipsis{% if i.percent == 100 %} _done{% endif %}">
+                                            {{ i.percent }}% <span> {{ i.title }}</span>
+                                            <picture>
+                                                <img src="{% static './img/constructions/bird_icon.svg' %}"
+                                                    alt="done" />
+                                            </picture>
+                                        </div>
+                                        <div class="info-cell__progress-box">
+                                            <div class="info-cell__progress-line" style="width: {{ i.percent }}%"></div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="lun-panorama" data-building-id="7582"></div>
+        <script src="https://aero.lun.ua/panorama.js"></script>
+    </div>
+</section>

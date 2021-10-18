@@ -1,0 +1,19 @@
+{% load i18n %}
+
+<div class="popup popup_form" >
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close">
+                <span>{% translate 'Закрить' %}</span>
+            </div>
+            <form action="{% url 'thanks' %}" method="POST" class="popup__form form">{% csrf_token %}
+                <h2 class="form__title">{% translate 'Заполните форму' %}</h2>
+                <h4 class="form__subtitle">{% translate 'Наш менеджер свяжеться с вами в ближайшее время' %}</h4>
+                <div class="form__input-box">
+                    {{ lead_form }}
+                </div>
+                <button type="submit" id="btn01-popup-send" class="form__btn button btn">{% translate 'Отправить' %}</button>
+            </form>
+        </div>
+    </div>
+</div>

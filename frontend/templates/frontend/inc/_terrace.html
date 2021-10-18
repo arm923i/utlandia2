@@ -1,0 +1,50 @@
+{% load static %}
+{% load i18n %}
+
+<section class="terasse _src-item _section ">
+    <div class="terasse__bg _ibg">
+        <picture>
+            <source srcset="{% static './img/main2_terasse/main2_bg.webp' %}" type="image/webp">
+            <img src="./img/main2_terasse/main2_bg.jpg" alt="apartments"/></picture>
+
+        <div class="terasse__container _container">
+            <div class="terasse__content">
+
+                <div class="terasse__title-box">
+                    <h2 class="terasse__title _title">{% translate 'Собственная терраса' %}</h2>
+                    <p class="terasse__text">
+                        {% translate 'Разводите сад, занимайтесь спортом, релаксируйте и наслаждайтесь свежим воздухом на личной территории площадью от 10 до 70 кв.м.' %}
+                    </p>
+                </div>
+
+                <div class="terasse__row">
+                    <div class="terasse__column">
+                        <div class="terasse__icon-box">
+                            <picture>
+                                <source  srcset="{% static './img/main2_terasse/icon01.svg' %}" type="image/webp">
+                                <img src="{% static './img/main2_terasse/icon01.' %}" loading="lazy" alt="house icon"/></picture>
+                        </div>
+                        <div class="terasse__info">{% translate 'Готовая' %}<span>{% translate 'отделка террасы' %}</span></div>
+                    </div>
+                    <div class="terasse__column">
+                        <div class="terasse__icon-box">
+                            <picture>
+                                <source srcset="{% static './img/main2_terasse/icon02.svg' %}" type="image/webp">
+                                <img src="{% static './img/main2_terasse/icon02.svg' %}" loading="lazy" alt="house icon"/></picture>
+                        </div>
+                        <div class="terasse__info">{% translate 'Не выходя из дома' %}<span>{% translate 'Отдых и спорт' %}</span></div>
+                    </div>
+                    <div class="terasse__column">
+                        <div class="terasse__icon-box">
+                            <picture>
+                                <source srcset="{% static './img/main2_terasse/icon03.svg' %}" type="image/webp">
+                                <img src="{% static './img/main2_terasse/icon03.svg' %}" loading="lazy" alt="house icon"/></picture>
+                        </div>
+                        <div class="terasse__info">{% translate 'Красивый вид' %}<span>{% translate 'с любого этажа' %}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
