@@ -5403,3 +5403,36 @@ function videoPlay(wrapper) {
 
 
 ;
+
+
+$(document).ready(function(){
+  $('body').append('<div class="scroll-up"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" class="scroll-up__arrow"><path class="filled-path" d="M32 18L19.92 6l-2.84 2.83L24.29 16H4v4h20.3l-7.22 7.17L19.93 30z"></path></svg></div>');
+  var scrollArrow = {
+    element: document.querySelector('.scroll-up'),
+    visibilityTime: 7000,
+    timer: null,
+    show: function show() {
+        var self = this;
+        $(this.element).addClass('visible');
+        clearTimeout(this.timer);
+        this.timer = setTimeout(function () {
+            self.hide();
+        }, this.visibilityTime);
+    },
+    hide: function hide() {
+        $(this.element).removeClass('visible');
+    }
+  };
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > 800) {
+        scrollArrow.show();
+    } else {
+        scrollArrow.hide();
+    }
+  });
+  $(scrollArrow.element).on('click', function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, animate.timing);
+  });
+});

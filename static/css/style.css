@@ -2793,11 +2793,21 @@ body .rngst_phone_button {
 }
 
 .floors__floor {
-  -webkit-animation: fadeIn 22s infinite ease;
-          animation: fadeIn 22s infinite ease;
+  /* -webkit-animation: fadeIn 22s infinite ease;
+          animation: fadeIn 22s infinite ease; */
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
+  fill: transparent;
+}
+.floors__floor:hover {
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  fill: #003dd6;
+  opacity: 0.5;
 }
 
 @-webkit-keyframes hover {
@@ -5391,14 +5401,7 @@ body .rngst_phone_button {
     fill: transparent;
   }
 
-  .floors__floor:hover {
-    -webkit-animation-name: hover;
-            animation-name: hover;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    fill: #003dd6;
-    opacity: 0.5;
-  }
+
 
   .storey__slider .slick-arrow {
     cursor: pointer;
@@ -8614,4 +8617,57 @@ body .rngst_phone_button {
 
 }
 
+}
+
+
+.footer__copyright{
+  margin-top: 24px;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 55px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgb(192 212 230 / 42%);
+  border: solid 1px #c0d4e6;
+  background-color: #fff;;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: calc(3020 - 2);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease all;
+  transition-property: opacity,visibility,-webkit-transform;
+  transition-property: opacity,visibility,transform;
+  transition-property: opacity,visibility,transform,-webkit-transform;
+  -webkit-transform: translateY(100%) scale(.6);
+  -ms-transform: translateY(100%) scale(.6);
+  transform: translateY(100%) scale(.6);
+}
+.scroll-up.visible {
+  visibility: visible;
+  opacity: .8;
+  -webkit-transform: translateY(0) scale(1);
+  -ms-transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1);
+}
+.scroll-up__arrow {
+  width: 22px;
+  height: 22px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.filled-path {
+  transition: .3s ease all;
+  transition-property: fill,stroke;
 }
